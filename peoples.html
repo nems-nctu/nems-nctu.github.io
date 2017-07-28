@@ -1,130 +1,147 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<title>NEtworking and Mobile Systems (NEMS) Lab - 網路和行動系統實驗室</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfVkOFCpB0JlbH9GmpvuOpnDLglUv0ZAc&callback=initMap"
-  type="text/javascript"></script>
-	<script src="js/jquery.1.12.4.min.js"></script>
-	<link rel="stylesheet" href="css/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/layout.css">
-	<style>
-		.mySlides {display:none}
-		.w3-left, .w3-right, .w3-badge {cursor:pointer}
-		.w3-badge {height:13px;width:13px;padding:0}
-	</style>
-</head>
+	<head>
+		<title>NEtworking and Mobile Systems (NEMS) Lab - 網路和行動系統實驗室</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfVkOFCpB0JlbH9GmpvuOpnDLglUv0ZAc&callback=initMap"
+	  type="text/javascript"></script>
+		<script src="js/jquery.1.12.4.min.js"></script>
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<style>
+			.mySlides {display:none}
+			.w3-left, .w3-right, .w3-badge {cursor:pointer}
+			.w3-badge {height:13px;width:13px;padding:0}
+		</style>
+	</head>
 
 <body>
-<!--Header / load from common.html -->
-<div id="header"></div>
+	<!--Header / load from common.html -->
+	<div id="header"></div>
 
-<!-- main-content 本頁內容開始 -->
-<div id="main-content" class="w3-container w3-content">
-	<div id="peoples"  class="w3-padding-top w3-padding-bottom">
-		<h2>Peoples</h2>
+	<!-- main-content 本頁內容開始 -->
+	<div id="main-content" class="w3-container w3-content">
+		<div id="peoples"  class="w3-padding-top w3-padding-bottom">
+			<h2>Peoples</h2>
 			<h3>Faculty</h3>
 			<div class="w3-row w3-center">
-
 				<div class="w3-quarter w3-hover-opacity">
 					<a href="http://people.cs.nctu.edu.tw/~chiyuli/index.html">
-				  		<img src="img/chiyu.jpg" alt="Boss" style="width:70%" class="w3-circle ">
+			  		<img src="img/peoples/chiyuli.jpg" style="width:70%" class="w3-circle ">
 				 		<h4>Chi-Yu Li</h4>
 				 		<p>李奇育</p>
 					</a>
 				</div>
-
-				
 			</div>
 
 			<h3>Phd</h3>
 			<div class="w3-row w3-center">
 				<div class="w3-quarter w3-hover-opacity">
-				<a href="#">
-				  		<img src="img/hiring.jpg" alt="Boss" style="width:60%" class="w3-circle ">
+					<a href="#">
+			  		<img src="img/hiring.jpg" style="width:60%" class="w3-circle ">
 					</a>
-					</div>
+				</div>
 			</div>
 			
 			<h3>Research Assistant</h3>
 			<div class="w3-row w3-center">
 				<div class="w3-quarter w3-hover-opacity">
-				<a href="#">
-				  		<img src="img/hiring.jpg" alt="Boss" style="width:60%" class="w3-circle ">
+					<a href="#">
+			  		<img src="img/hiring.jpg" style="width:60%" class="w3-circle ">
 					</a>
-					</div>
+				</div>
+			</div>
+
+			<h3>Master 2015</h3>
+			<div class="w3-row w3-center">
+				<div class="w3-quarter w3-hover-opacity">
+					<a href="#">
+					  <img src="img/peoples/ctkuo.jpg" style="width:60%" class="w3-circle w3-hover-opacity">
+					  <h4>Chien-Ting Kuo</h4>
+					  <p>郭建廷</p>
+				  </a>
+				</div>
 			</div>
 
 			<h3>Master 2016</h3>
 			<div class="w3-row w3-center">
-
 				<div class="w3-quarter w3-hover-opacity">
 					<a href="#">
-				  <img src="img/male.png" alt="Boss" style="width:60%" class="w3-circle w3-hover-opacity">
-				  
-				  <h4>Chia-Jui Yeh</h4>
-				  <p>葉家睿</p>
+					  <img src="img/peoples/cjyeh.jpg" style="width:60%" class="w3-circle w3-hover-opacity">
+					  <h4>Chia-Jui Yeh</h4>
+					  <p>葉家睿</p>
 				  </a>
 				</div>
-
 				<div class="w3-quarter w3-hover-opacity">
 					<a href="#">
-				  <img src="img/male.png" alt="Boss" style="width:60%" class="w3-circle w3-hover-opacity">
-				  <h4></h4>
-				  <p></p>
+					  <img src="img/peoples/yaoyuli.jpg" style="width:60%" class="w3-circle w3-hover-opacity">
+					  <h4>Yao-Yu Li</h4>
+					  <p>李曜宇</p>
 				  </a>
 				</div>
-
+				<div class="w3-quarter w3-hover-opacity">
+					<a href="#">
+					  <img src="img/peoples/gio.jpg" style="width:60%" class="w3-circle w3-hover-opacity">
+					  <h4>Giovanni Salinas</h4>
+					  <p>羅吉凡</p>
+				  </a>
+				</div>
 			</div>
 			
 			<h3>Master 2017</h3>
 			<div class="w3-row w3-center">
-
 				<div class="w3-quarter w3-hover-opacity">
 					<a href="#">
-				  <img src="img/male.png" alt="Boss" style="width:60%" class="w3-circle w3-hover-opacity">
-				  
-				  <h4>Syuan-Cheng Chen</h4>
-				  <p>陳軒丞</p>
+					  <img src="img/peoples/scchen.jpg" style="width:60%" class="w3-circle w3-hover-opacity">
+					  <h4>Syuan-Cheng Chen</h4>
+					  <p>陳軒丞</p>
 				  </a>
 				</div>
-
 				<div class="w3-quarter w3-hover-opacity">
 					<a href="#">
-				  <img src="img/male.png" alt="Boss" style="width:60%" class="w3-circle w3-hover-opacity">
-				  <h4></h4>
-				  <p></p>
+					  <img src="img/peoples/yuhanlu.jpg" style="width:60%" class="w3-circle w3-hover-opacity">
+					  <h4>Yu-Han Lu</h4>
+					  <p>呂昱翰</p>
 				  </a>
 				</div>
-				
 				<div class="w3-quarter w3-hover-opacity">
-				<a href="#">
-				  		<img src="img/hiring.jpg" alt="Boss" style="width:60%" class="w3-circle ">
-					</a>
-					</div>
-
+					<a href="#">
+					  <img src="img/peoples/male.jpg" style="width:60%" class="w3-circle w3-hover-opacity">
+					  <h4>Louie Lu</h4>
+					  <p>呂紹榕</p>
+				  </a>
+				</div>
+				<div class="w3-quarter w3-hover-opacity">
+					<a href="#">
+					  <img src="img/peoples/male.jpg" style="width:60%" class="w3-circle w3-hover-opacity">
+					  <h4>Pei-Yuan Hong</h4>
+					  <p>洪培元</p>
+				  </a>
+				</div>
+				<div class="w3-quarter w3-hover-opacity">
+					<a href="#">
+					  <img src="img/peoples/hiring.jpg" style="width:60%" class="w3-circle w3-hover-opacity">
+				  </a>
+				</div>
 			</div>
 
 			<h3>Alumni</h3>
 			<div class="w3-row w3-center">
-
 				<div class="w3-quarter w3-hover-opacity">
 					<a href="#">
-				  <img src="img/male.png" alt="Boss" style="width:60%" class="w3-circle w3-hover-opacity">
-				  <h4>Wei-Han Chen</h4>
-				  <p>Phd in OSU</p>
+					  <img src="img/peoples/whchen.jpg" style="width:60%" class="w3-circle w3-hover-opacity">
+					  <h4>Wei-Han Chen</h4>
+					  <p>Phd in OSU</p>
 				  </a>
 				</div>
-
-				
 			</div>
+		</div>
 	</div>
-</div>
 
-<!-- Footer-->
-<div id="footer">
+	<!-- Footer-->
+	<div id="footer">
 		<footer class="w3-light-gray w3-padding-top-16">
 		<div class="w3-content w3-container">
 		  <div class="w3-row w3-section">
@@ -145,34 +162,34 @@
 		<div class="w3-container w3-blue w3-dark-gray w3-medium">
 			<div>© 2016 NEtworking and Mobile Systems Lab NCTU</div>
 		</div>
-	</footer>
-</div>
-<!-- Scripts -->
-<script src="js/common.js"></script>
-<script type="text/javascript">
-//Google map
-<!-- Google Map Location -->
-var myCenter = new google.maps.LatLng(24.7867784,120.9952533);
+		</footer>
+	</div>
+	<!-- Scripts -->
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+	//Google map
+	<!-- Google Map Location -->
+	var myCenter = new google.maps.LatLng(24.7867784,120.9952533);
 
-function initialize() {
-var mapProp = {
-  center: myCenter,
-  zoom: 15,
-  scrollwheel: true,
-  draggable: true,
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
+	function initialize() {
+	var mapProp = {
+	  center: myCenter,
+	  zoom: 15,
+	  scrollwheel: true,
+	  draggable: true,
+	  mapTypeId: google.maps.MapTypeId.ROADMAP
+	  };
 
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-var marker = new google.maps.Marker({
-  position: myCenter,
-});
+	var marker = new google.maps.Marker({
+	  position: myCenter,
+	});
 
-marker.setMap(map);
-}
+	marker.setMap(map);
+	}
 
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-</body>
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	</body>
 </html>

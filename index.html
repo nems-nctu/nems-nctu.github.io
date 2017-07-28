@@ -1,126 +1,131 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<title>NEtworking and Mobile Systems (NEMS) Lab - 網路和行動系統實驗室</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfVkOFCpB0JlbH9GmpvuOpnDLglUv0ZAc&callback=initMap"
-  type="text/javascript"></script>
-	<script src="js/jquery.1.12.4.min.js"></script>
-	<link rel="stylesheet" href="css/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/layout.css">
-	<style>
-		.mySlides {display:none}
-		.w3-left, .w3-right, .w3-badge {cursor:pointer}
-		.w3-badge {height:13px;width:13px;padding:0}
-	</style>
-</head>
+	<head>
+		<title>NEtworking and Mobile Systems (NEMS) Lab - 網路和行動系統實驗室</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-<!--Header / load from common.html -->
-<div id="header"></div>
+		<!-- js -->
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfVkOFCpB0JlbH9GmpvuOpnDLglUv0ZAc&callback=initMap"
+	  type="text/javascript"></script>
+		<script src="js/jquery.1.12.4.min.js"></script>
 
-<!-- main-content 本頁內容開始 -->
-<div id="main-content" class="w3-container w3-content">
-	<!--大圖輪播-->
-	<div class="w3-content w3-display-container w3-margin-top" style="width: 100%">
-	  <img class="mySlides" src="img/img_nature_wide.jpg" style="width:100%">
-	  <img class="mySlides" src="img/img_fjords_wide.jpg" style="width:100%">
-	  <img class="mySlides" src="img/img_mountains_wide.jpg" style="width:100%">
-	  <!--大圖輪播介面-->
-	  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-		<div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-		<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-	  </div>
-	</div>
-	<div id="about-nems"  class="w3-padding-top w3-padding-bottom">
-		<h2 class="w3-padding">NEMS Lab</h2>
-		<p>The lab for NEtworking and Mobile Systems (NEMS) is affiliated with the Department of Computer Science at NCTU. 
-			It is located at MIRC (電子資訊大樓) Room 704. Our research proceeds from network fundamentals to other disciplines. We aim to pursue customizable, flexible 
-			solutions for networking services, as well as to explore security issues and to design countermeasures in mobile systems.
-			Our projects span four directions: Wireless networking: WiGig, Wi-Fi; Network mobility: IPv6 NEMO, wireless mobility;
-			Mobile network: 4G/5G security, service performance; Network and system security: SDN security, wireless security, Android security.</p>
-		</div>
-	<div id="nems-news"  class="w3-padding-top w3-padding-bottom">
-		<h2>NEMS lab News</h2>
-			<h3>Recruiting</h3>
-			<ol>
-				<p><font color="#EE0000">*** One master student position (2017) is still open. ***</font></p>
-				<p>We are looking for a master/Phd research assistant (Full-time MOST Research Assistant). People who plan to study aboard are very welcome. 
-					The employment period is quite flexible (Negotiable).</p>
-				<p>We are looking for <strong>self-motivated</strong> students (including undergraduate, master, and phd) who want to work on 
-					interesting problems in the areas of networking and mobile systems. The potential students are expected to be 
-					willing <strong>to learn</strong>, <strong>to explore</strong>, and <strong>to code</strong>. 
-					If you are interested in joining us, you are very welcome to drop by our lab to chat with us. </p>
-			</ol>
-			<h3>Milestones</h3>
-			<ol>
-				<li>Sep. 2016: NEMS Lab (@ MIRC Room 704) is launched.</li>
-			</ol>
-			<h3>Press Coverage</h3>
-			<ol>
-			</ol>
-			<h3>Alumni News</h3>
-			<ol>
-				<li>Aug. 2017: Our research assistant (Wei-Han Chen) leaves for studying aboard in Computer Science at OSU.</li>
-			</ol>
-  	</div>
-</div>
+		<!-- css -->
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<style>
+			.mySlides {display:none}
+			.w3-left, .w3-right, .w3-badge {cursor:pointer}
+			.w3-badge {height:13px;width:13px;padding:0}
+		</style>
+	</head>
 
-<!-- Footer-->
-<div id="footer">
-		<footer class="w3-light-gray w3-padding-top-16">
-		<div class="w3-content w3-container">
-		  <div class="w3-row w3-section">
-			<div class="w3-col m7 s12 w3-container">
-			  <!-- Add Google Maps -->
-			  <div id="googleMap" class="w3-round-large" style="width:100%;height:200px;"></div>
+	<body>
+		<!-- header: load from common.html -->
+		<div id="header"></div>
+
+		<!-- main -->
+		<div id="main-content" class="w3-container w3-content">
+			<!--大圖輪播-->
+			<div class="w3-content w3-display-container w3-margin-top" style="width: 100%">
+			  <img class="mySlides" src="img/img_nature_wide.jpg" style="width:100%">
+			  <img class="mySlides" src="img/img_fjords_wide.jpg" style="width:100%">
+			  <img class="mySlides" src="img/img_mountains_wide.jpg" style="width:100%">
+			  <!--大圖輪播介面-->
+			  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+				<div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+				<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+			  </div>
 			</div>
-			<div class="w3-col m5 s12 w3-container w3-section w3-medium">
-				<div class="w3-margin-bottom">
-					<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 300新竹市大學路1001號 電子資訊大樓704<br>
-					<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +886 (03)5759290<br>
-					<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: noname19930930 at gmail.com<br>
+			<div id="about-nems"  class="w3-padding-top w3-padding-bottom">
+				<h2 class="w3-padding">NEMS Lab</h2>
+				<p>The lab for NEtworking and Mobile Systems (NEMS) is affiliated with the Department of Computer Science at NCTU. 
+					It is located at MIRC (電子資訊大樓) Room 704. Our research proceeds from network fundamentals to other disciplines. We aim to pursue customizable, flexible 
+					solutions for networking services, as well as to explore security issues and to design countermeasures in mobile systems.
+					Our projects span four directions: Wireless networking: WiGig, Wi-Fi; Network mobility: IPv6 NEMO, wireless mobility;
+					Mobile network: 4G/5G security, service performance; Network and system security: SDN security, wireless security, Android security.</p>
 				</div>
-			</div>
-			
-		  </div>
+			<div id="nems-news"  class="w3-padding-top w3-padding-bottom">
+				<h2>NEMS lab News</h2>
+					<h3>Recruiting</h3>
+					<ol>
+						<p><font color="#EE0000">*** One master student position (2017) is still open. ***</font></p>
+						<p>We are looking for a master/Phd research assistant (Full-time MOST Research Assistant). People who plan to study aboard are very welcome. 
+							The employment period is quite flexible (Negotiable).</p>
+						<p>We are looking for <strong>self-motivated</strong> students (including undergraduate, master, and phd) who want to work on 
+							interesting problems in the areas of networking and mobile systems. The potential students are expected to be 
+							willing <strong>to learn</strong>, <strong>to explore</strong>, and <strong>to code</strong>. 
+							If you are interested in joining us, you are very welcome to drop by our lab to chat with us. </p>
+					</ol>
+					<h3>Milestones</h3>
+					<ol>
+						<li>Sep. 2016: NEMS Lab (@ MIRC Room 704) is launched.</li>
+					</ol>
+					<h3>Press Coverage</h3>
+					<ol>
+					</ol>
+					<h3>Alumni News</h3>
+					<ol>
+						<li>Aug. 2017: Our research assistant (Wei-Han Chen) leaves for studying aboard in Computer Science at OSU.</li>
+					</ol>
+		  	</div>
 		</div>
-		<div class="w3-container w3-blue w3-dark-gray w3-medium">
-			<div>© 2016 NEtworking and Mobile Systems Lab NCTU</div>
+
+		<!-- script -->
+		<div id="footer">
+			<footer class="w3-light-gray w3-padding-top-16">
+				<div class="w3-content w3-container">
+				  <div class="w3-row w3-section">
+					<div class="w3-col m7 s12 w3-container">
+					  <!-- google map -->
+					  <div id="googleMap" class="w3-round-large" style="width:100%;height:200px;"></div>
+					</div>
+					<div class="w3-col m5 s12 w3-container w3-section w3-medium">
+						<div class="w3-margin-bottom">
+							<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 300新竹市大學路1001號 電子資訊大樓704<br>
+							<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +886 (03)5712121 #59290<br>
+							<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: nems@g2.nctu.edu.tw <br>
+						</div>
+					</div>
+					
+				  </div>
+				</div>
+				<div class="w3-container w3-blue w3-dark-gray w3-medium">
+					<div>© 2016 NEtworking and Mobile Systems Lab NCTU</div>
+				</div>
+			</footer>
 		</div>
-	</footer>
-</div>
-<!-- Scripts -->
-<script src="js/common.js"></script>
-<script type="text/javascript">
-//Google map
-<!-- Google Map Location -->
-var myCenter = new google.maps.LatLng(24.7867784,120.9952533);
 
-function initialize() {
-var mapProp = {
-  center: myCenter,
-  zoom: 15,
-  scrollwheel: true,
-  draggable: true,
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
+		<!-- script -->
+		<script src="js/common.js"></script>
+		<script type="text/javascript">
+			//Google map
+			<!-- Google Map Location -->
+			var myCenter = new google.maps.LatLng(24.7867784,120.9952533);
 
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			function initialize() {
+				var mapProp = {
+				  center: myCenter,
+				  zoom: 15,
+				  scrollwheel: true,
+				  draggable: true,
+				  mapTypeId: google.maps.MapTypeId.ROADMAP
+			  };
 
-var marker = new google.maps.Marker({
-  position: myCenter,
-});
+				var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-marker.setMap(map);
-}
+				var marker = new google.maps.Marker({
+				  position: myCenter,
+				});
 
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-</body>
+				marker.setMap(map);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</body>
 </html>
