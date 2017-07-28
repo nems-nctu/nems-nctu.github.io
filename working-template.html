@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NEtworking and Mobile Systems (NEMS) Lab - 網路和行動系統實驗室</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+	</style>
+</head>
+
+<body>
+
+<!--中小螢幕左邊選單-->
+<nav class="w3-sidenav w3-white w3-card-2" style="display:none; z-index: 10000;" id="mySidenav">
+	<a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-large">Close &times;</a>
+	<a href="#" class="w3-padding-large">Home</a>
+	<a href="#" class="w3-padding-large ">Projects</a>
+	<a href="#" class="w3-padding-large ">Publications</a>
+	<a href="#" class="w3-padding-large ">People</a>
+	<a href="#" class="w3-padding-large ">Links</a>
+	<a href="#" class="w3-padding-large ">Gallery</a>
+	<a href="#" class="w3-padding-large ">Download</a>
+	<a href="#" class="w3-padding-large ">Demo</a>
+</nav>
+<!--Header-->
+<header class="w3-container w3-black w3-center">
+  <!--中小螢幕左邊選單按鈕-->
+  <span class="w3-opennav w3-xlarge w3-hide-large w3-opennav w3-left" onclick="w3_open()">&#9776;</span>
+  <!--logo及名稱-->
+	<h1 class="w3-medium">
+		<a href="index.html">
+			<img src="img/logo.png" alt="NEMS lab logo" id="nemsLabLogo" class="w3-image" width=100/>
+		</a>
+		<p>NEtworking and Mobile Systems Lab <br/> National Chiao Tung University</p>
+	</h1>
+	
+</header>
+<!--小螢幕下拉後時的 header-->
+<header id="smallScrollHeader" class="w3-container w3-black w3-hide-large w3-hide">
+	<!--左邊選單按鈕-->
+	<span class="w3-opennav w3-xlarge w3-hide-large w3-opennav w3-left w3-margin-right" onclick="w3_open()">&#9776;</span>
+	<h1 class="w3-large">NEMS Lab</h1>
+</header>
+<!--主選單-->
+<div id="myNavbarContainer" class="w3-blue w3-card-2 w3-hide-medium w3-hide-small">
+	<ul id="myNavbar" class="w3-navbar w3-blue w3-hide-medium w3-hide-small w3-content" >
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large">Home</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Projects</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Publications</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">People</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Links</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Gallery</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Download</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Demo</a></li>
+	</ul>
+</div>
+
+<!--本頁內容開始////-->
+<div class="w3-container w3-content">
+	<!--大圖輪播-->
+	<div class="w3-content w3-display-container w3-margin-top" style="width: 100%">
+	  <img class="mySlides" src="img/img_nature_wide.jpg" style="width:100%">
+	  <img class="mySlides" src="img/img_fjords_wide.jpg" style="width:100%">
+	  <img class="mySlides" src="img/img_mountains_wide.jpg" style="width:100%">
+	  <!--大圖輪播介面-->
+	  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+		<div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+		<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+	  </div>
+	</div>
+
+	<h2>About NEMS Lab</h2>
+	<p>The Center for Vision, Cognition, Learning, and Autonomy (VCLA) is affiliated with the Departments of Statistics and Computer Science at UCLA. We start from Computer Vision and expand to other disciplines. Our objective is to pursue a unified framework for representation, learning, inference and reasoning, and to build intelligent computer systems for real world applications. Our projects span four directions:Vision: image and video parsing, scene understanding, scheduling top-down/bottom-up processes, spatial-temporal-causal and-or graphs;
+Cognition: functionality, intuitive physics, intentionality, perceptual causality, theory-of-mind, and visual persuasion;
+Learning: information projection, stochastic grammars, and-or graph learning, and lifelong communicative learning;
+Autonomy: human robot collaboration, multi-agent task planning, situated dialogue, human value and moral norm.</p>
+	<h2>NEMS News</h2>
+	<p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+	<hr>
+	<p>The Center for Vision, Cognition, Learning, and Autonomy (VCLA) is affiliated with the Departments of Statistics and Computer Science at UCLA. We start from Computer Vision and expand to other disciplines. Our objective is to pursue a unified framework for representation, learning, inference and reasoning, and to build intelligent computer systems for real world applications. Our projects span four directions:Vision: image and video parsing, scene understanding, scheduling top-down/bottom-up processes, spatial-temporal-causal and-or graphs;
+Cognition: functionality, intuitive physics, intentionality, perceptual causality, theory-of-mind, and visual persuasion;
+Learning: information projection, stochastic grammars, and-or graph learning, and lifelong communicative learning;
+Autonomy: human robot collaboration, multi-agent task planning, situated dialogue, human value and moral norm.</p>
+	<h2>NEMS News</h2>
+	<p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+	<hr>
+	<p>The Center for Vision, Cognition, Learning, and Autonomy (VCLA) is affiliated with the Departments of Statistics and Computer Science at UCLA. We start from Computer Vision and expand to other disciplines. Our objective is to pursue a unified framework for representation, learning, inference and reasoning, and to build intelligent computer systems for real world applications. Our projects span four directions:Vision: image and video parsing, scene understanding, scheduling top-down/bottom-up processes, spatial-temporal-causal and-or graphs;
+Cognition: functionality, intuitive physics, intentionality, perceptual causality, theory-of-mind, and visual persuasion;
+Learning: information projection, stochastic grammars, and-or graph learning, and lifelong communicative learning;
+Autonomy: human robot collaboration, multi-agent task planning, situated dialogue, human value and moral norm.</p>
+	<h2>NEMS News</h2>
+	<p>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</p>
+	<hr>
+</div>
+
+<!-- Footer -->
+<footer class="w3-light-gray w3-padding-top-16">
+	<div class="w3-content w3-container">
+	  <div class="w3-row w3-section">
+		<div class="w3-col m7 s12 w3-container">
+		  <!-- Add Google Maps -->
+		  <div id="googleMap" class="w3-round-large" style="width:100%;height:200px;"></div>
+		</div>
+		<div class="w3-col m5 s12 w3-container w3-section w3-medium">
+			<div class="w3-margin-bottom">
+				<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 300新竹市東區大學路1001號<br>
+				<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+				<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+			</div>
+		</div>
+		
+	  </div>
+	</div>
+	<!--
+	<ul id="myNavbarFooter" class="w3-navbar w3-blue w3-hide-medium w3-hide-small w3-dark-gray w3-small" >
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large">Home</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Projects</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Publications</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">People</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Links</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Gallery</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Download</a></li>
+			<li class="w3-hide-small"><a href="#" class="w3-padding-large ">Demo</a></li>
+	</ul>
+	-->
+	<div class="w3-container w3-blue w3-dark-gray w3-medium">
+		<div>© 2016 NEtworking and Mobile Systems Lab NCTU</div>
+		<div class="w3-xlarge">
+			<a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+			<a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+			<a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+			<a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+			<a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+		</div>
+	</div>
+</footer>
+
+
+<script>
+//Open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+	var navbarContainer = document.getElementById("myNavbarContainer");
+	var smallScrollHeader = document.getElementById("smallScrollHeader");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+		navbarContainer.className = " w3-blue" + " w3-card-2" + " w3-hide-medium" + " w3-hide-small" + " w3-top";
+        navbar.className = " w3-navbar" + " w3-animate-top" + " w3-blue" + " w3-hide-medium" + " w3-hide-small" + " w3-content";
+		smallScrollHeader.className = " w3-container" + " w3-black" + " w3-hide-large" + " w3-top";
+    } else {
+		navbarContainer.className = navbarContainer.className.replace(" w3-blue w3-card-2 w3-hide-medium w3-hide-small w3-top", " w3-blue w3-card-2 w3-hide-medium w3-hide-small");
+        navbar.className = navbar.className.replace(" w3-navbar w3-animate-top w3-blue w3-hide-medium w3-hide-small w3-content", " w3-navbar w3-blue w3-hide-medium w3-hide-small w3-content");
+		smallScrollHeader.className = smallScrollHeader.className.replace(" w3-container w3-black w3-hide-large w3-top", " w3-container w3-black w3-hide-large w3-hide");
+    }
+}
+
+// SlideShow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+ 
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+<!-- Google Map Location -->
+var myCenter = new google.maps.LatLng(24.7867784,120.9952533);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 15,
+  scrollwheel: true,
+  draggable: true,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</body>
+</html>
