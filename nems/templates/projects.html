@@ -5,42 +5,20 @@
 	</head>
 
 	<body>
-		{% include 'components/common.html' %}
+		<!-- navbar -->
+		{% include 'components/navbar.html' %}
 
 		<!-- main -->
 		<div id="main-content" class="w3-container w3-content">
-			{% include 'components/project.html' %}
+			{% for project in projects %}
+				{% include 'components/project.html' %}
+			{% endfor %}	
 		</div>
 		
+		<!-- footer -->
 		{% include 'components/footer.html' %}
 
-		<!-- script -->
-		{% load staticfiles %}
-		<script src="{% static "js/common.js" %}"></script>
-		<script type="text/javascript">
-			//Google map
-			<!-- Google Map Location -->
-			var myCenter = new google.maps.LatLng(24.7867784,120.9952533);
-
-			function initialize() {
-				var mapProp = {
-				  center: myCenter,
-				  zoom: 15,
-				  scrollwheel: true,
-				  draggable: true,
-				  mapTypeId: google.maps.MapTypeId.ROADMAP
-			  };
-
-				var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-				var marker = new google.maps.Marker({
-				  position: myCenter,
-				});
-
-				marker.setMap(map);
-			}
-
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
+		<!-- javascript -->
+		{% include 'resources/script' %}
 	</body>
 </html>
