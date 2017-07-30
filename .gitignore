@@ -1,2 +1,3 @@
 *.sqlite3
 nems/__pycache__/
+staticfiles/
