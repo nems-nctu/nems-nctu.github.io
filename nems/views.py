@@ -52,23 +52,157 @@ def projects(request):
 	return render(
 		request, 
 		'projects.html',
-		{ 'projects': projects}
+		{ 'projects': projects }
 	)
 
 def publications(request):
 	return render(request, 'publications.html')
 
 def people(request):
-	return render(request, 'peoples.html')
+	# var
+	people = {
+		'faculty': [
+			{
+				'name': {
+					'en': 'Chi-Yu Li',
+					'cht': '李奇育'
+				},
+				'image': 'img/people/chiyuli.jpg',
+				'url': 'http://people.cs.nctu.edu.tw/~chiyuli/index.html'
+			}
+		],
+		'phd': [
+			{
+				'name': {
+					'en': '',
+					'cht': ''
+				},
+				'image': 'img/people/hiring.jpg',
+				'url': ''
+			}
+		],
+		'assistant': [
+			{
+				'name': {
+					'en': '',
+					'cht': ''
+				},
+				'image': 'img/people/hiring.jpg',
+				'url': ''
+			}
+		],
+		'2016': [
+			{
+				'name': {
+					'en': 'Chien-Ting Kuo',
+					'cht': '郭建廷'
+				},
+				'image': 'img/people/ctkuo.jpg',
+				'url': ''
+			},
+			{
+				'name': {
+					'en': 'Chia-Jui Yeh',
+					'cht': '葉家睿'
+				},
+				'image': 'img/people/cjyeh.jpg',
+				'url': ''
+			},
+			{
+				'name': {
+					'en': 'Yao-Yu Li',
+					'cht': '李曜宇'
+				},
+				'image': 'img/people/yaoyuli.jpg',
+				'url': ''
+			},
+			{
+				'name': {
+					'en': 'Giovanni Salinas',
+					'cht': '羅吉凡'
+				},
+				'image': 'img/people/gio.jpg',
+				'url': ''
+			}
+		],
+		'2017': [
+			{
+				'name': {
+					'en': 'Syuan-Cheng Chen',
+					'cht': '陳軒丞'
+				},
+				'image': 'img/people/scchen.jpg',
+				'url': ''
+			},
+			{
+				'name': {
+					'en': 'Yu-Han Lu',
+					'cht': '呂昱翰'
+				},
+				'image': 'img/people/yuhanlu.jpg',
+				'url': ''
+			},
+			{
+				'name': {
+					'en': 'Louie Lu',
+					'cht': '呂紹榕'
+				},
+				'image': 'img/people/male.jpg',
+				'url': ''
+			},
+			{
+				'name': {
+					'en': 'Pei-Yuan Hong',
+					'cht': '洪培元'
+				},
+				'image': 'img/people/male.jpg',
+				'url': ''
+			},
+			{
+				'name': {
+					'en': '',
+					'cht': ''
+				},
+				'image': 'img/people/hiring.jpg',
+				'url': ''
+			}
+		],
+		'alumni': [
+			{
+				'name': {
+					'en': 'Wei-Han Chen',
+					'cht': 'Phd in OSU'
+				},
+				'image': 'img/people/whchen.jpg',
+				'url': ''
+			}
+		],
+	}
+	return render(request, 'people.html', {'people': people})
 
 def links(request):
 	return render(request, 'links.html')
 
 def gallery(request):
-	return render(request, 'gallery.html')
+	# var
+	photos = [
+		{
+			'url': 'img/gallery/20170728.jpg',
+			'alt': 'Lab'
+		},
+		{
+			'url': 'img/gallery/20170615.jpg',
+			'alt': 'Lab dinner'
+		},
+		{
+			'url': 'img/gallery/20170606.jpg',
+			'alt': 'Jamie'
+		}
+	]
+	return render(request, 'gallery.html', { 'photos': photos })
 
-def downloads(request):
-	return render(request, 'downloads.html')
+def download(request):
+	return render(request, 'download.html')
 
 def demo(request):
 	return render(request, 'demo.html')

@@ -26,7 +26,7 @@ urlpatterns = [
 	url(r'^people', people, name='people'),
 	url(r'^links', links, name='links'),
 	url(r'^gallery', gallery, name='gallery'),
-	url(r'^downloads', downloads, name='downloads'),
+	url(r'^download', download, name='download'),
 	url(r'^demo', demo, name='demo'),
     url(r'^admin/', admin.site.urls),
 ]
