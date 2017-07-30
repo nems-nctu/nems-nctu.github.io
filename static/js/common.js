@@ -1,10 +1,4 @@
-﻿//load header & footer
-$(function () {
-    $("#header").load("common.html #header");
-    //$("#footer").load("common.html #footer");
-});
-
-//Open and close sidenav
+﻿//Open and close sidenav
 function w3_open() {
     document.getElementById("mySidenav").style.display = "block";
 }

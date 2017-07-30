@@ -1,0 +1,14 @@
+{% for project in projects %}
+	<br>
+	<h3>{{ project.title }}</h3>
+	<ul class="w3-ul">
+		<li>
+			{% load staticfiles %}
+			<img src={% static "" %}{{ project.image.path }} class="w3-left w3-margin-right" style="width:{{ project.image.width }}px">
+			<div>
+				<snap class="w3-large">{{ project.content }}</snap>
+			</div>
+		</li>
+	</ul>
+	<br>
+{% endfor %}
