@@ -19,14 +19,13 @@ from django.contrib import admin
 from nems.views import *
 
 urlpatterns = [
-	url(r'^$', index, name='index'),
-	url(r'^index', index, name='index'),
-	url(r'^projects', projects, name='projects'),
-	url(r'^publications', publications, name='publications'),
-	url(r'^people', people, name='people'),
-	url(r'^links', links, name='links'),
-	url(r'^gallery', gallery, name='gallery'),
-	url(r'^download', download, name='download'),
-	url(r'^demo', demo, name='demo'),
-    url(r'^admin/', admin.site.urls),
+	url(r'^$', home, name='home'),
+	url(r'^home/$', home, name='home'),
+	url(r'^projects/$', projects, name='projects'),
+	url(r'^publications/$', publications, name='publications'),
+	url(r'^people/$', people, name='people'),
+	url(r'^links/$', links, name='links'),
+	url(r'^gallery/$', gallery, name='gallery'),
+	url(r'^download/$', download, name='download'),
+	url(r'^demo/$', demo, name='demo'),
 ]

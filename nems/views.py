@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.conf.urls.static import static
-
 from nems.settings import *
 
 import json
@@ -9,8 +8,8 @@ import json
 # pattern
 path_pattern = STATICFILES_DIRS[0] + '/data/{}.json'
 
-def index(request):
-	return render(request, 'index.html')
+def home(request):
+	return render(request, 'home.html')
 
 def projects(request):
 	with open(path_pattern.format('projects'), 'r') as file:
@@ -51,3 +50,6 @@ def download(request):
 def demo(request):
 	return render(request, 'demo.html')
 
+def custom_404(request):
+	print('erer')
+	return HttpResponseNotFound('<h1>Page not found</h1>')
