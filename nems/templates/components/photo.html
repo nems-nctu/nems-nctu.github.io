@@ -1,0 +1,4 @@
+<div class="w3-col m3">
+	{% load staticfiles %}
+	<img src={% static "" %}{{ photo.url }} style="width:100%" onclick="openModal(this)" class="w3-hover-opacity" alt={{ photo.alt }}>
+</div>

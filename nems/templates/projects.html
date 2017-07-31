@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		{% include 'components/head.html' %}
+	</head>
+
+	<body>
+		<!-- navbar -->
+		{% include 'components/navbar.html' %}
+
+		<!-- main -->
+		<div id="main-content" class="w3-container w3-content">
+			{% for project in projects %}
+				{% include 'components/project.html' %}
+			{% endfor %}	
+		</div>
+		
+		<!-- footer -->
+		{% include 'components/footer.html' %}
+
+		<!-- javascript -->
+		{% include 'resources/script.html' %}
+	</body>
+</html>

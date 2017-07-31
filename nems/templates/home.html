@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		{% include 'components/head.html' %}
+	</head>
+
+	<body>
+		<!-- navbar -->
+		{% include 'components/navbar.html' %}
+
+		<!-- main -->
+		<div id="main-content" class="w3-container w3-content">
+			<!--大圖輪播-->
+			{% load staticfiles %}
+			<div class="w3-content w3-display-container w3-margin-top" style="width: 100%">
+			  <img class="mySlides" src="{% static "img/nctu.jpg"%}" style="width:100%">
+			  <img class="mySlides" src="{% static "img/dinner.jpg"%}" style="width:100%">
+			  <img class="mySlides" src="{% static "img/lab.jpg"%}" style="width:100%">
+			  <!--大圖輪播介面-->
+			  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+				<div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+				<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+				<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+			  </div>
+			</div>
+			<div id="about-nems"  class="w3-padding-top w3-padding-bottom">
+				<h2 class="w3-padding">NEMS Lab</h2>
+				<p>The lab for NEtworking and Mobile Systems (NEMS) is affiliated with the Department of Computer Science at NCTU. 
+					It is located at MIRC (電子資訊大樓) Room 704. Our research proceeds from network fundamentals to other disciplines. We aim to pursue customizable, flexible 
+					solutions for networking services, as well as to explore security issues and to design countermeasures in mobile systems.
+					Our projects span four directions: Wireless networking: WiGig, Wi-Fi; Network mobility: IPv6 NEMO, wireless mobility;
+					Mobile network: 4G/5G security, service performance; Network and system security: SDN security, wireless security, Android security.</p>
+				</div>
+			<div id="nems-news"  class="w3-padding-top w3-padding-bottom">
+				<h2>NEMS lab News</h2>
+					<h3>Recruiting</h3>
+					<ol>
+						<p><font color="#EE0000">*** One master student position (2017) is still open. ***</font></p>
+						<p>We are looking for a master/Phd research assistant (Full-time MOST Research Assistant). People who plan to study aboard are very welcome. 
+							The employment period is quite flexible (Negotiable).</p>
+						<p>We are looking for <strong>self-motivated</strong> students (including undergraduate, master, and phd) who want to work on 
+							interesting problems in the areas of networking and mobile systems. The potential students are expected to be 
+							willing <strong>to learn</strong>, <strong>to explore</strong>, and <strong>to code</strong>. 
+							If you are interested in joining us, you are very welcome to drop by our lab to chat with us. </p>
+					</ol>
+					<h3>Milestones</h3>
+					<ol>
+						<li>Sep. 2016: NEMS Lab (@ MIRC Room 704) is launched.</li>
+					</ol>
+					<h3>Press Coverage</h3>
+					<ol>
+					</ol>
+					<h3>Alumni News</h3>
+					<ol>
+						<li>Aug. 2017: Our research assistant (Wei-Han Chen) leaves for studying aboard in Computer Science at OSU.</li>
+					</ol>
+		  	</div>
+		</div>
+
+		<!-- footer -->
+		{% include 'components/footer.html' %}
+
+		<!-- javascript -->
+		{% include 'resources/script.html' %}
+	</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		{% include 'components/head.html' %}
+	</head>
+
+	<body>
+		<!-- navbar -->
+		{% include 'components/navbar.html' %}
+
+		<!-- main -->
+		<div id="main-content" class="w3-container w3-content">
+			<div id="links"  class="w3-padding-top w3-padding-bottom">
+				<h2>Links</h2>
+					<h3>NCTU</h3>
+					<ul>
+						<li><a href="https://www.cs.nctu.edu.tw/csauto/meetingroom/"> Meeting room reservation system</a> </li>
+					</ul>
+					<h3>Resource</h3>
+					<ul>
+						<li><a href="https://openwrt.org/"> OpenWrt</a>: Wireless freedom. </li>
+						<li><a href="https://wireless.wiki.kernel.org/"> Linux Wireless</a>: Main source of documentation for the Linux wireless subsystem.</li>
+						<li><a href="http://www.openairinterface.org/"> OpenAirInterface</a>: Development of 5G cellular stack on commercial off-the-shelf hardware. </li>
+		 			</ul>	
+			</div>
+		</div>
+
+		<!-- footer -->
+		{% include 'components/footer.html' %}
+
+		<!-- javascript -->
+		{% include 'resources/script.html' %}
+	</body>
+</html>

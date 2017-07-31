@@ -1,0 +1,52 @@
+<div id="header">
+	<nav class="w3-sidenav w3-white w3-card-2" style="display:none; right:0; z-index: 10000;" id="mySidenav">
+		<a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-large">Close &times;</a>
+		<a href="/home" class="w3-padding-large">Home</a>
+		<a href="/projects" class="w3-padding-large">Projects</a>
+		<a href="/publications" class="w3-padding-large">Publications</a>
+		<a href="/people" class="w3-padding-large">People</a>
+		<a href="/links" class="w3-padding-large">Links</a>
+		<a href="/gallery" class="w3-padding-large">Gallery</a>
+		<a href="/download" class="w3-padding-large">Download</a>
+		<a href="/demo" class="w3-padding-large">Demo</a>
+	</nav>
+	<header class="w3-container w3-black">
+		<div class="w3-content " style="padding-bottom:16px;">
+			<!--中小螢幕左邊選單按鈕-->
+			<span class="w3-opennav w3-xlarge w3-hide-large w3-opennav w3-right" onclick="w3_open()">&#9776;</span>
+			<!--logo及名稱-->
+			<h1 class="w3-xxlarge w3-margin-0 w3-margin-top" style="line-height: 1.2;">
+				<a href="/home">
+					{% load staticfiles %}
+					<img src="{% static "img/logo.png"%}" alt="NEMS lab logo" id="nemsLabLogo" class="w3-image w3-left w3-hide-small" width=100/>
+					<img src="{% static "img/logo.png"%}" alt="NEMS lab logo" id="nemsLabLogo" class="w3-image w3-left w3-hide-medium w3-hide-large" width=70/>
+					<span class="w3-margin-left w3-xlarge w3-slim w3-hide-small w3-hide-medium"><b>NEtworking and Mobile Systems Lab</b></span>
+					<span class="w3-margin-left w3-large w3-slim w3-hide-large w3-hide-small">NEtworking and Mobile Systems Lab</span>
+					<span class="w3-margin-left w3-xlarge w3-hide-medium w3-hide-large"><b>NEMS Lab</b></span>
+					<span class="w3-medium w3-slim w3-hide-medium w3-hide-small"><b>( 網路和行動系統實驗室 )</b></span>
+					<span class="w3-medium w3-slim w3-hide-large w3-hide-small">(網路和行動系統實驗室)</span>
+				</a>
+			</h1>
+			<span class="w3-large w3-margin-left w3-hide-small w3-slim">National Chiao Tung University</span>
+		</div>
+	</header>
+	<!--小螢幕下拉後時的 header-->
+	<header id="smallScrollHeader" class="w3-container w3-black w3-hide-large w3-hide">
+		<!--左邊選單按鈕-->
+		<span class="w3-opennav w3-xlarge w3-hide-large w3-opennav w3-right w3-margin-right" onclick="w3_open()">&#9776;</span>
+		<h1 class="w3-large">NEMS Lab</h1>
+	</header>
+	<!--主選單-->
+	<div id="myNavbarContainer" class="w3-blue w3-card-2 w3-hide-medium w3-hide-small">
+		<ul id="myNavbar" class="w3-navbar w3-blue w3-hide-medium w3-hide-small w3-content" >
+			<li class="w3-hide-small"><a href="/home" class="w3-padding-large">Home</a></li>
+			<li class="w3-hide-small"><a href="/projects" class="w3-padding-large">Projects</a></li>
+			<li class="w3-hide-small"><a href="/publications" class="w3-padding-large">Publications</a></li>
+			<li class="w3-hide-small"><a href="/people" class="w3-padding-large">People</a></li>
+			<li class="w3-hide-small"><a href="/links" class="w3-padding-large">Links</a></li>
+			<li class="w3-hide-small"><a href="/gallery" class="w3-padding-large">Gallery</a></li>
+			<li class="w3-hide-small"><a href="/download" class="w3-padding-large">Download</a></li>
+			<li class="w3-hide-small"><a href="/demo" class="w3-padding-large">Demo</a></li>
+		</ul>
+	</div>
+</div>

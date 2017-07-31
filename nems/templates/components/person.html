@@ -1,0 +1,8 @@
+<div class="w3-quarter w3-hover-opacity">
+	<a href={{ person.url }}>
+	{% load staticfiles %}
+		<img src={% static "" %}{{ person.image }} style="width:70%" class="w3-circle ">
+		<h4>{{ person.name.en }}</h4>
+ 		<p>{{ person.name.cht }}</p>
+	</a>
+</div>
