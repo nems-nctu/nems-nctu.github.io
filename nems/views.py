@@ -49,7 +49,3 @@ def download(request):
 
 def demo(request):
 	return render(request, 'demo.html')
-
-def custom_404(request):
-	print('erer')
-	return HttpResponseNotFound('<h1>Page not found</h1>')
